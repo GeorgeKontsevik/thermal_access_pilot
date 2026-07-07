@@ -1,24 +1,38 @@
-# Thermal access pilot
+# thermal_access_pilot
 
-Kaliningrad building-level walking access to PT stops with heat exposure along paths.
+Heat-aware walking access and service routing pilot.
 
-Run:
+## Scheme
+
+```mermaid
+flowchart LR
+    A[Inputs] --> B[Run: src/thermal_access_pilot/__main__.py]
+    B --> C[Checked outputs]
+    C --> D[Paper / thesis use]
+```
+
+## Main Result
+
+![Main result](outputs/batch_service_access_hottest_summer2025/four_city_heat_composite_polyclinic.png)
+
+## Run
+
+Entrypoint: `src/thermal_access_pilot/__main__.py`
+
+Human:
 
 ```bash
-cd /Users/gk/Code/super-duper-disser/thermal_access_pilot
 uv run thermal-access-pilot --config configs/kaliningrad.toml --force
 ```
 
-Key outputs:
+Agent:
 
-- `outputs/kaliningrad/thermal/headline_utci.tif`
-- `outputs/kaliningrad/routes/routes.parquet`
-- `outputs/kaliningrad/tables/building_results.parquet`
-- `outputs/kaliningrad/maps/*.png`
-- `outputs/kaliningrad/summary.json`
+Inspect maps, parquet row counts, and summary JSON after each run.
 
-The default Kaliningrad pilot threshold is UTCI > 29 °C because the selected real 2025
-summer archive hour reaches UTCI max ≈30.4 °C; UTCI > 32 °C is also reported in
-thermal metadata and is zero for this run.
+## Publication
 
-Caveat: the pilot is heat-only. Cold-wind/URock and PALM-4U are deferred in `aggregated_spatial_pipeline/BACKLOG.md`.
+No standalone publication yet; thesis integration in parent repo.
+
+## Next Steps / Heuristics
+
+Heuristic: heat-only UTCI path is current scope; wind/URock/PALM are deferred until validated.
