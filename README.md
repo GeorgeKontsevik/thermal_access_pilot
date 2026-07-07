@@ -1,5 +1,7 @@
 # thermal_access_pilot
 
+[![OSA-improved](https://img.shields.io/badge/improved%20by-OSA-yellow)](https://github.com/aimclub/OSA)
+
 Heat-aware walking access pilot. It combines service locations, pedestrian routes, and UTCI/heat exposure to compare normal and hottest-period accessibility.
 
 ## System Map
@@ -37,3 +39,4 @@ No standalone publication yet; thesis integration is in the parent repo.
 ## Next Steps / Heuristics
 
 Heuristic: heat-only UTCI is the current validated scope. Wind/URock/PALM expansion is deferred until those layers are validated.
+
