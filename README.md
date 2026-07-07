@@ -16,7 +16,7 @@ flowchart LR
 
 ## Main Result
 
-![Four-city heat composite](outputs/batch_service_access_hottest_summer2025/four_city_heat_composite_polyclinic.png)
+![Four-city heat composite](docs/readme_main_result.png)
 
 ## Run
 
