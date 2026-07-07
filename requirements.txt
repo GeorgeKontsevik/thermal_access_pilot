@@ -1,0 +1,9 @@
+affine>=2.4,<3
+geopandas>=1.0,<2
+networkx>=3.4,<4
+numpy>=2,<3
+pandas>=2.2,<3
+pillow>=11,<13
+pytest>=8,<10
+rasterio>=1.4,<2
+shapely>=2,<3
