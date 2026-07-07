@@ -9,6 +9,7 @@ src/thermal_access_pilot.egg-info/
 cache/
 
 # Heavy intermediate thermal/model artifacts
+outputs/
 outputs/*/inputs/
 outputs/*/thermal/
 
