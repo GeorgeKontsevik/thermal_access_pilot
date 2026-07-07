@@ -1,0 +1,14 @@
+{
+  "city": "delft_netherlands",
+  "tree_source": "official_proxy",
+  "buildings": 45427,
+  "stops": 446,
+  "trees": 2000,
+  "median_baseline_min": 4.02292018718181,
+  "median_shade_generalized_min": 5.4081526623644045,
+  "median_delta_generalized_min": 1.393888034308131,
+  "route_changed_count": 94,
+  "coimbra_note": null,
+  "brno_note": null,
+  "delft_note": "official point layer used; default proxy radius/height filled where missing"
+}

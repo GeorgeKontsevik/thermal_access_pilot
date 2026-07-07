@@ -1,0 +1,40 @@
+[project]
+name = "thermal-access-pilot"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "affine>=2.4,<3",
+  "contextily>=1.6,<2",
+  "geopandas>=1.0,<2",
+  "mapclassify>=2.10,<3",
+  "matplotlib>=3.10,<4",
+  "networkx>=3.4,<4",
+  "numpy>=2,<3",
+  "osmnx>=2,<3",
+  "pandas>=2.2,<3",
+  "pillow>=11,<13",
+  "py7zr>=1.0,<2",
+  "pyarrow>=20",
+  "pyproj>=3.7,<4",
+  "rasterio>=1.4,<2",
+  "shapely>=2,<3",
+  "solweig==0.1.0b88",
+  "xarray>=2025.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+thermal-access-pilot = "thermal_access_pilot.__main__:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

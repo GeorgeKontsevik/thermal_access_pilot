@@ -1,0 +1,17 @@
+[study]
+center_lon = 20.4531
+center_lat = 54.7003
+core_radius_m = 1250
+model_halo_m = 250
+crs = "EPSG:32634"
+pixel_size_m = 2
+
+[routing]
+walk_speed_m_s = 1.4
+hot_threshold_c = 29
+penalties = [0.25, 0.5, 1.0]
+max_snap_distance_m = 100
+
+[paths]
+city_bundle = "aggregated_spatial_pipeline/outputs/active_19_good_cities_20260412/joint_inputs/kaliningrad_russia"
+output_dir = "thermal_access_pilot/outputs/kaliningrad"

@@ -1,0 +1,14 @@
+{
+  "city": "bergen_norway",
+  "tree_source": "official",
+  "buildings": 13072,
+  "stops": 453,
+  "trees": 410,
+  "median_baseline_min": 2.569339467196961,
+  "median_shade_generalized_min": 3.4686082807158973,
+  "median_delta_generalized_min": 0.8981054189414879,
+  "route_changed_count": 24,
+  "coimbra_note": null,
+  "brno_note": null,
+  "delft_note": null
+}

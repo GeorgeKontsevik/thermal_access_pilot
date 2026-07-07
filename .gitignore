@@ -1,0 +1,15 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+src/*.DS_Store
+src/thermal_access_pilot.egg-info/
+cache/
+
+# Heavy intermediate thermal/model artifacts
+outputs/*/inputs/
+outputs/*/thermal/
+
+# Keep selected final outputs only when explicitly added

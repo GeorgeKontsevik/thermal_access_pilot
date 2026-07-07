@@ -1,0 +1,14 @@
+{
+  "city": "brno_czechia",
+  "tree_source": "official_proxy",
+  "buildings": 21438,
+  "stops": 1040,
+  "trees": 31998,
+  "median_baseline_min": 2.988474978415394,
+  "median_shade_generalized_min": 3.972485732365599,
+  "median_delta_generalized_min": 0.9857330416083054,
+  "route_changed_count": 227,
+  "coimbra_note": null,
+  "brno_note": "official tree layer lacks crown/height; default proxy radius=3m height=9m used",
+  "delft_note": null
+}

@@ -1,0 +1,23 @@
+{
+  "city": "madrid_spain",
+  "core_size_m": 5000.0,
+  "selected_hour": "2025-08-16 17:00:00",
+  "engine": "solweig",
+  "buildings": 28098,
+  "origins": 16195,
+  "stops": 3031,
+  "median_baseline_min": 1.5341066112354185,
+  "median_utci_generalized_min": 2.5992949652454103,
+  "median_delta_generalized_min": 1.0423617759240187,
+  "median_baseline_route_max_utci_c": 47.262699127197266,
+  "share_routes_with_very_strong_or_extreme_baseline": 0.9078548915394599,
+  "share_routes_with_very_strong_or_extreme_utci": 0.9078548915394599,
+  "utci_cost_factors": {
+    "cold_stress": 1.15,
+    "no_thermal_stress": 1.0,
+    "moderate_heat_stress": 1.1,
+    "strong_heat_stress": 1.25,
+    "very_strong_heat_stress": 1.5,
+    "extreme_heat_stress": 1.8
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "city": "bologna_italy",
+  "tree_source": "official",
+  "buildings": 26657,
+  "stops": 1356,
+  "trees": 2160,
+  "median_baseline_min": 1.7908039910605187,
+  "median_shade_generalized_min": 2.417585387931701,
+  "median_delta_generalized_min": 0.6267813968711822,
+  "route_changed_count": 0,
+  "coimbra_note": null,
+  "brno_note": null,
+  "delft_note": null
+}

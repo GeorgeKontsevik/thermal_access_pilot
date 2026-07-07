@@ -1,0 +1,14 @@
+{
+  "city": "coimbra_portugal",
+  "tree_source": "osm_fallback",
+  "buildings": 16099,
+  "stops": 909,
+  "trees": 3007,
+  "median_baseline_min": 1.6781042421932062,
+  "median_shade_generalized_min": 2.2654407269608283,
+  "median_delta_generalized_min": 0.5856612547732192,
+  "route_changed_count": 2,
+  "coimbra_note": "official tree portal unavailable; OSM natural=tree fallback used",
+  "brno_note": null,
+  "delft_note": null
+}

@@ -1,0 +1,6 @@
+city,tree_source,buildings,stops,trees,median_baseline_min,median_shade_generalized_min,median_delta_generalized_min,route_changed_count,coimbra_note,brno_note,delft_note
+bergen_norway,official,13072,453,410,2.569339467196961,3.4686082807158973,0.8981054189414879,24,,,
+bologna_italy,official,26657,1356,2160,1.7908039910605187,2.417585387931701,0.6267813968711822,0,,,
+brno_czechia,official_proxy,21438,1040,31998,2.988474978415394,3.972485732365599,0.9857330416083054,227,,official tree layer lacks crown/height; default proxy radius=3m height=9m used,
+coimbra_portugal,osm_fallback,16099,909,3007,1.6781042421932062,2.2654407269608283,0.5856612547732192,2,official tree portal unavailable; OSM natural=tree fallback used,,
+delft_netherlands,official_proxy,45427,446,2000,4.02292018718181,5.4081526623644045,1.393888034308131,94,,,official point layer used; default proxy radius/height filled where missing
