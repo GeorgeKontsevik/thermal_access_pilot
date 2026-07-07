@@ -1,19 +1,22 @@
 # thermal_access_pilot
 
-Heat-aware walking access and service routing pilot.
+Heat-aware walking access pilot. It combines service locations, pedestrian routes, and UTCI/heat exposure to compare normal and hottest-period accessibility.
 
-## Scheme
+## System Map
 
 ```mermaid
 flowchart LR
-    A[Inputs] --> B[Run: src/thermal_access_pilot/__main__.py]
-    B --> C[Checked outputs]
-    C --> D[Paper / thesis use]
+    CITY[city config] --> ROUTES[walking routes]
+    SERVICES[service points] --> ROUTES
+    HEAT[UTCI raster/grid] --> EXPOSURE[route heat exposure]
+    ROUTES --> EXPOSURE
+    EXPOSURE --> MAPS[access maps + composite]
+    MAPS --> SUMMARY[JSON/parquet summaries]
 ```
 
 ## Main Result
 
-![Main result](outputs/batch_service_access_hottest_summer2025/four_city_heat_composite_polyclinic.png)
+![Four-city heat composite](outputs/batch_service_access_hottest_summer2025/four_city_heat_composite_polyclinic.png)
 
 ## Run
 
@@ -25,14 +28,12 @@ Human:
 uv run thermal-access-pilot --config configs/kaliningrad.toml --force
 ```
 
-Agent:
-
-Inspect maps, parquet row counts, and summary JSON after each run.
+Agent: inspect maps, parquet row counts, and summary JSON after each run; do not infer visibility from render logs.
 
 ## Publication
 
-No standalone publication yet; thesis integration in parent repo.
+No standalone publication yet; thesis integration is in the parent repo.
 
 ## Next Steps / Heuristics
 
-Heuristic: heat-only UTCI path is current scope; wind/URock/PALM are deferred until validated.
+Heuristic: heat-only UTCI is the current validated scope. Wind/URock/PALM expansion is deferred until those layers are validated.
